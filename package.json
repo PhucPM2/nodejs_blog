@@ -23,14 +23,11 @@
   "homepage": "https://github.com/PhucPM2/nodejs_blog#readme",
   "description": "",
   "lint-staged": {
-    "src/**/*.{js,json,scss,jsx}": [
-      "prettier --single-quote --trailing-comma all --tab-width 4 --write",
-      "git add ."
-    ]
+    "src/**/*.{js,json,scss,jsx}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run test"
     }
   },
   "dependencies": {
