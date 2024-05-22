@@ -29,6 +29,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,json,scss}": [
+      "echo 'Linting and formatting files'",
       "prettier --single-quote --trailing-comma all --tab-width 4 --write",
       "git add ."
     ]
