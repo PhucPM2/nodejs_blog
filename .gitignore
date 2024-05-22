@@ -1,4 +1,6 @@
 .vscode
+
 .husky/
+.husky/pre-commit
 src/public/css/
 node_modules/
