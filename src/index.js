@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use(morgan("combined"));
 app.use(
     express.urlencoded({
-        extended: true,
+         extended: true,
     }),
 );
 app.use(express.json());
