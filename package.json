@@ -24,11 +24,14 @@
   "description": "",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": [
+      "prettier --single-quote --trailing-comma all --tab-width 4 --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "express": "^4.19.2",
