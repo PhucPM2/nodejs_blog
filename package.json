@@ -24,11 +24,11 @@
   "description": "",
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "npx lint-staged && echo Hook pre-commit được thực thi vào $(date)"
     }
   },
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "E:/NodeJS/blog/node_modules/.bin prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "dependencies": {
     "express": "^4.19.2",
