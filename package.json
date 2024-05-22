@@ -24,7 +24,7 @@
   "description": "",
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "npx lint-staged && npm pre-commit"
     }
   },
   "lint-staged": {
