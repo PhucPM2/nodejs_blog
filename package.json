@@ -28,9 +28,9 @@
     }
   },
   "lint-staged": {
-    "./src/**/*.{js,jsx}": [
-      "npx prettier --single-quote --trailing-comma all --tab-width 4 --write",
-      "git add ."
+    "src/**/*.{js,jsx}": [
+      "prettier --single-quote --trailing-comma all --tab-width 4 --write",
+      "git add"
     ]
   },
   "dependencies": {
