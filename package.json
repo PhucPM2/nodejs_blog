@@ -24,7 +24,7 @@
   "description": "",
   "husky": {
     "hooks": {
-      "pre-commit": "E:/NodeJS/blog/node_modules/.bin/lint-staged && echo Hook pre-commit được thực thi vào $(date)"
+      "pre-commit": "npx lint-staged"
     }
   },
   "lint-staged": {
