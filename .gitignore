@@ -1,4 +1,4 @@
 .vscode
-.husky
+.husky/
 src/public/css/
 node_modules/
